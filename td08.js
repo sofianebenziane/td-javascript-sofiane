@@ -33,8 +33,8 @@ function Robbie () {
     {
       switch (arguments[0]) {
         case 1:
-         //return 'Bonjour {arguments[1]}!';
-         return 'Bonjour '+arguments[1]+'!';
+         return `Bonjour ${arguments[1]}!`;
+         //return 'Bonjour '+arguments[1]+'!';
           break;
         case 2:
           return new Date().toISOString();

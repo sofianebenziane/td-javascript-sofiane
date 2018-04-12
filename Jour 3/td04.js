@@ -9,38 +9,7 @@ Par exemple fibFilter([1,2,3,4,5]) == [1,2,3,5]
 /* TD Part */
 
 const fibFilter = (array) => {
-//  console.log(array);
-
-return (
-
-    array.filter( item => {
-
-      if (item < 2)
-      {
-        return true;
-      }else{
-var firstTerm = 0;
-
-var secondTerm = 1;
-
-var thirdTerm = 0;
-
-while (thirdTerm < item)
-{
-    thirdTerm = firstTerm + secondTerm;
-
-    firstTerm = secondTerm;
-
-    secondTerm = thirdTerm;
-}
-
-if(thirdTerm == item)
-{
-    return true
-}
-      }
-    })
-  );
+return array.filter( item => Math.sqrt(5*Math.pow(item, 2)-4) === parseInt(Math.sqrt(5*Math.pow(item, 2)-4)) || Math.sqrt(5*Math.pow(item, 2)+4) === parseInt(Math.sqrt(5*Math.pow(item, 2)+4)) ? true : false);
 }
 
 /* Testing Part */

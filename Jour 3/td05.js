@@ -40,6 +40,8 @@ class Point2 {
 
 }
 
+module.exports = Point2;
+
 /* Testing Part */
 const p1 = new Point2(12, 41)
 const p2 = new Point2(-12, -41)

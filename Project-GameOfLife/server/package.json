@@ -1,0 +1,18 @@
+{
+  "name": "conwaygame-back-end",
+  "version": "1.0.0",
+  "description": "Node Conway Game of Life Server",
+  "main": "back-end.js",
+  "scripts": {
+    "start": "node websocket.js",
+    "lint": "standard back-end.js game_modules/*.js"
+  },
+  "author": "Jeremie Amsellem",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "standard": "^11.0.1",
+    "ws": "^5.1.1"
+  }
+}
